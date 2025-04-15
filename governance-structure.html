@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URMC Analytics Governance Structure</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .ur-blue {
+            background-color: #003B71;
+            color: white;
+        }
+        .ur-yellow {
+            background-color: #FFD100;
+            color: #003B71;
+        }
+        
+        .adac-council {
+            background-color: #0033a0;
+            color: white;
+            font-weight: bold;
+            padding: 20px;
+        }
+        .strategic {
+            background-color: #4472c4;
+            color: white;
+        }
+        .tactical {
+            background-color: #70ad47;
+            color: white;
+        }
+        
+        .org-box {
+            border: 2px solid #0033a0;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .org-box:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transform: translateY(-5px);
+        }
+        
+        .workgroup-detail {
+            background: #f5f5f5;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 5px solid;
+        }
+        
+        .hhs {
+            border-left-color: #4472c4;
+        }
+        
+        .clinops {
+            border-left-color: #70ad47;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Header -->
+    <header class="ur-blue shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div>
+                    <h1 class="text-3xl font-bold">URMC Analytics Governance Structure</h1>
+                    <h2 class="text-xl mt-2">Strategic Oversight & Decision-Making Framework</h2>
+                </div>
+                <div class="mt-4 md:mt-0">
+                    <p class="text-sm">University of Rochester Medical Center</p>
+                    <p class="text-sm">Enterprise Data & Analytics</p>
+                    <p class="text-sm">April 2025</p>
+                </div>
+            </div>
+            <div class="mt-4">
+                <nav class="flex space-x-4">
+                    <a href="index.html" class="text-white hover:text-yellow-300 font-medium">Overview</a>
+                    <a href="governance-structure.html" class="text-yellow-300 hover:text-yellow-300 font-medium underline">Governance Structure</a>
+                    <a href="strategic-plan.html" class="text-white hover:text-yellow-300 font-medium">Strategic Plan</a>
+                    <a href="community-structure.html" class="text-white hover:text-yellow-300 font-medium">Community Structure</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-12">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-bold text-indigo-800 mb-4">Analytics & Data Advisory Council</h2>
+                <p class="text-gray-700 mb-6">
+                    The Analytics and Data Advisory Council (ADAC) provides oversight of URMC's data and analytics strategy to support decision-making and alignment with the University of Rochester Medical Center business objectives. This Advisory Council ensures the integrated Analytics Community of Practice (CoP) roadmap, budget and policies align to initiatives that support the organization's prioritized strategic goals.
+                </p>
+                
+                <div class="flex flex-col md:flex-row justify-center items-start gap-8 mt-8">
+                    <div class="md:w-1/2">
+                        <h3 class="text-xl font-bold text-indigo-800 mb-4">ADAC Purpose & Authority</h3>
+                        <div class="border rounded-lg p-4 bg-indigo-50 mb-4">
+                            <h4 class="font-bold text-indigo-800 mb-2">Delegated Authority</h4>
+                            <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                                <li>Delegated from the URMC IT Executive Leadership Council</li>
+                                <li>Authorized to delegate or revoke powers to workgroups</li>
+                                <li>Can approve data governance policies</li>
+                                <li>Reviews and approves Data & Analytics Community of Practice Roadmap</li>
+                                <li>Approves fiscal budget recommendations for data management technology investments</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="border rounded-lg p-4 bg-indigo-50">
+                            <h4 class="font-bold text-indigo-800 mb-2">Key Responsibilities</h4>
+                            <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                                <li>Approve Charters for all associated Workgroups, Centers of Excellence and Community of Practice</li>
+                                <li>Review and approve Data & Analytics Community of Practice Roadmap</li>
+                                <li>Review and approve fiscal budget recommendations for data management technology investments</li>
+                                <li>Approve URMC data governance policies</li>
+                                <li>Provide oversight for operational readiness for workflow changes associated with new technology implementations</li>
+                                <li>Review Key Performance Indicators for analytics program effectiveness</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2">
+                        <h3 class="text-xl font-bold text-indigo-800 mb-4">ADAC Leadership & Membership</h3>
+                        <div class="border rounded-lg overflow-hidden">
+                            <div class="bg-indigo-100 p-3 border-b">
+                                <h4 class="font-bold text-indigo-800">Co-Chairs</h4>
+                            </div>
+                            <div class="p-4">
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                        </svg>
+                                        Adam Anolik, URMC CFO
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                        </svg>
+                                        Martin Zand, CTSI Director
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="border rounded-lg overflow-hidden mt-4">
+                            <div class="bg-indigo-100 p-3 border-b">
+                                <h4 class="font-bold text-indigo-800">Facilitators</h4>
+                            </div>
+                            <div class="p-4">
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                        </svg>
+                                        Kevin Moran, ISD SDR Data & Analytics
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                        </svg>
+                                        Conrad Gleber, A. CMIO Data & Analytics
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="border rounded-lg overflow-hidden mt-4">
+                            <div class="bg-indigo-100 p-3 border-b">
+                                <h4 class="font-bold text-indigo-800">Key Voting Members</h4>
+                            </div>
+                            <div class="p-4">
+                                <div class="grid grid-cols-2 gap-2 text-gray-700">
+                                    <ul class="space-y-2">
+                                        <li class="flex items-center text-sm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-indigo-600 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                            </svg>
+                                            Jim Forrester, URMC CTO
+                                        </li>
+                                        <li class="flex items-center text-sm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-indigo-600 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                            </svg>
+                                            Lisa Nelson, URMC CAO
+                                        </li>
+                                        <li class="flex items-center text-sm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-indigo-600 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                            </svg>
+                                            Mike Apostolakos, URMC CMO
+                                        </li>
+                                        <li class="flex items-center text-sm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-indigo-600 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                            </svg>
+                                            Gregg Nicandri, URMC CMIO
+                                        </li>
+                                        <li class="flex items-center text-sm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-indigo-600 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                            </svg>
+                                            Kate Valcin, URMC CNE
+                                        </li>
+                                        <li class="flex items-center text-sm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-indigo-600 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                            </svg>
+                                            Rosemary Ventura, URMC CNIO
+                                        </li>
+                                    </ul>
+                                    <ul class="space-y-2">
+                                        <li class="flex items-center text-sm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-indigo-600 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                            </svg>
+                                            Liz Lattimore, Chief of Staff
+                                        </li>
+                                        <li class="flex items-center text-sm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-indigo-600 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                            </svg>
+                                            Kathy Parrinello, SMH/HH CEO
+                                        </li>
+                                        <li class="flex items-center text-sm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-indigo-600 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                            </svg>
+                                            Angelique Cohen, URMC CQO
+                                        </li>
+                                        <li class="flex items-center text-sm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-indigo-600 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                            </svg>
+                                            Brian Martin, MFG COO
+                                        </li>
+                                        <li class="flex items-center text-sm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-indigo-600 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                            </svg>
+                                            Kurt Koczent, FFT COO
+                                        </li>
+                                        <li class="flex items-center text-sm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-indigo-600 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                            </svg>
+                                            Gerard Mikols, SMD CFO
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-indigo-800 mb-6">Governance Hierarchy</h2>
+            
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="mb-8">
+                    <div class="org-box adac-council">
+                        Analytics & Data Advisory Council (ADAC)
+                        <p><small>Oversight of URMC's data and analytics strategy</small></p>
+                    </div>
+                    
+                    <div class="flex justify-center my-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </div>
+                    
+                    <div class="org-box cop">
+                        Community of Practice (CoP)
+                        <p><small>Fostering federated cooperation among analytics groups</small></p>
+                    </div>
+                    
+                    <div class="flex justify-center my-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </div>
+                    
+                    <div class="flex flex-col md:flex-row justify-center gap-6">
+                        <div class="md:w-1/2">
+                            <div class="org-box strategic">
+                                Strategic Workgroups
+                                <p><small>Long-term, enterprise-wide projects</small></p>
+                            </div>
+                            
+                            <div class="mt-4 space-y-4">
+                                <div class="border rounded p-3 bg-blue-50">
+                                    <h4 class="font-bold text-blue-800">Hospital & Health System Project Workgroup</h4>
+                                    <p class="text-sm">Enhancing system-wide hospital operations</p>
+                                </div>
+                                
+                                <div class="border rounded p-3 bg-blue-50">
+                                    <h4 class="font-bold text-blue-800">Service Line Strategy Project Workgroup</h4>
+                                    <p class="text-sm">Improving service line efficiency and driving growth</p>
+                                </div>
+                                
+                                <div class="border rounded p-3 bg-blue-50">
+                                    <h4 class="font-bold text-blue-800">Research & Innovation Project Workgroup</h4>
+                                    <p class="text-sm">Expanding research & innovation collaboration</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="md:w-1/2 mt-6 md:mt-0">
+                            <div class="org-box tactical">
+                                Tactical Workgroups
+                                <p><small>Immediate, ad-hoc requests and "fires"</small></p>
+                            </div>
+                            
+                            <div class="mt-4 space-y-4">
+                                <div class="border rounded p-3 bg-green-50">
+                                    <h4 class="font-bold text-green-800">Clinical Operations Request Workgroup</h4>
+                                    <p class="text-sm">Handling urgent clinical operations analytics needs</p>
+                                </div>
+                                
+                                <div class="border rounded p-3 bg-green-50">
+                                    <h4 class="font-bold text-green-800">Finance and Operations Request Workgroup</h4>
+                                    <p class="text-sm">Managing urgent administrative analytics needs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 p-4 border-t pt-6">
+                    <h3 class="text-xl font-bold text-indigo-800 mb-4">Governance Principles</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="border rounded-lg p-4 bg-blue-50">
+                            <h4 class="font-bold text-blue-800 mb-2">Strategic Direction</h4>
+                            <p class="text-sm text-gray-700">The ADAC Council sets overall strategy and provides governance oversight for all analytics initiatives, ensuring alignment with organizational goals.</p>
+                        </div>
+                        
+                        <div class="border rounded-lg p-4 bg-blue-50">
+                            <h4 class="font-bold text-blue-800 mb-2">Decision-Making</h4>
+                            <p class="text-sm text-gray-700">Decisions require majority plus one (51%) for approval. All workgroups follow similar governance processes for project evaluation and prioritization.</p>
+                        </div>
+                        
+                        <div class="border rounded-lg p-4 bg-blue-50">
+                            <h4 class="font-bold text-blue-800 mb-2">Resource Allocation</h4>
+                            <p class="text-sm text-gray-700">Strategic workgroups receive planned allocation based on priorities, while tactical workgroups have dynamic allocation based on urgency.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-indigo-800 mb-6">Key Deliverables & Outcomes</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold text-indigo-800 mb-4">ADAC Deliverables</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                            </svg>
+                            <div>
+                                <h4 class="font-bold text-gray-800">URMC Data & Analytics Roadmap</h4>
+                                <p class="text-sm text-gray-600">Annual schematic of operational initiatives and enabling technologies demonstrating alignment with URMC business objectives</p>
+                            </div>
+                        </li>
+                        
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                            </svg>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Key Performance Indicators</h4>
+                                <p class="text-sm text-gray-600">Quarterly metrics that determine the effectiveness of analytics programs, used to drive optimization and solution prioritization</p>
+                            </div>
+                        </li>
+                        
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                            </svg>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Workgroup Charter Approvals</h4>
+                                <p class="text-sm text-gray-600">Approval of charters for all associated workgroups as needed, ensuring proper governance and alignment</p>
+                            </div>
+                        </li>
+                        
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                            </svg>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Data & Analytics Policy Approval</h4>
+                                <p class="text-sm text-gray-600">Review and approval of policies governing usage of data and technology solutions by URMC staff</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold text-indigo-800 mb-4">Workgroup Deliverables</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                            </svg>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Project Prioritization Recommendations</h4>
+                                <p class="text-sm text-gray-600">Strategic evaluation and ranking of projects based on organizational priorities and available resources</p>
+                            </div>
+                        </li>
+                        
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                            </svg>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Meeting Minutes & Decisions</h4>
+                                <p class="text-sm text-gray-600">Documentation of key decisions, approvals, and action items from workgroup meetings</p>
+                            </div>
+                        </li>
+                        
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                            </svg>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Status Reports</h4>
+                                <p class="text-sm text-gray-600">Regular updates on active projects and requests, tracking progress against timelines and deliverables</p>
+                            </div>
+                        </li>
+                        
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                            </svg>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Enterprise Data Opportunity Recommendations</h4>
+                                <p class="text-sm text-gray-600">Identification of strategic opportunities for enhancing data assets and analytics capabilities</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-6">
+            <div class="flex justify-between">
+                <a href="index.html" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                    Back to Overview
+                </a>
+                <a href="strategic-plan.html" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+                    Strategic Plan
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold">University of Rochester Medical Center</h3>
+                    <p class="text-sm">Enterprise Data & Analytics</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-sm">Contact: analytics@urmc.rochester.edu</p>
+                    <p class="text-sm">© 2025 University of Rochester Medical Center</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

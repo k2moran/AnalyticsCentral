@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URMC Analytics Community Structure</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .ur-blue {
+            background-color: #003B71;
+            color: white;
+        }
+        .ur-yellow {
+            background-color: #FFD100;
+            color: #003B71;
+        }
+        
+        .box {
+            border: 2px solid #0033a0;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .box:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transform: translateY(-5px);
+        }
+        
+        .adac-council {
+            background-color: #0033a0;
+            color: white;
+            font-weight: bold;
+            padding: 20px;
+        }
+        
+        .cop {
+            background-color: #4472c4;
+            color: white;
+            font-weight: bold;
+            padding: 15px;
+        }
+        
+        .coe {
+            background-color: #70ad47;
+            color: white;
+        }
+        
+        .cah {
+            background-color: #ed7d31;
+            color: white;
+        }
+        
+        .comparison-detail {
+            background: #f5f5f5;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 5px solid;
+        }
+        
+        .coe-detail {
+            border-left-color: #70ad47;
+        }
+        
+        .cah-detail {
+            border-left-color: #ed7d31;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Header -->
+    <header class="ur-blue shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div>
+                    <h1 class="text-3xl font-bold">Analytics Community Structure</h1>
+                    <h2 class="text-xl mt-2">Federated Development Model</h2>
+                </div>
+                <div class="mt-4 md:mt-0">
+                    <p class="text-sm">University of Rochester Medical Center</p>
+                    <p class="text-sm">Enterprise Data & Analytics</p>
+                    <p class="text-sm">April 2025</p>
+                </div>
+            </div>
+            <div class="mt-4">
+                <nav class="flex space-x-4">
+                    <a href="index.html" class="text-white hover:text-yellow-300 font-medium">Overview</a>
+                    <a href="governance-structure.html" class="text-white hover:text-yellow-300 font-medium">Governance Structure</a>
+                    <a href="strategic-plan.html" class="text-white hover:text-yellow-300 font-medium">Strategic Plan</a>
+                    <a href="community-structure.html" class="text-yellow-300 hover:text-yellow-300 font-medium underline">Community Structure</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-12">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-bold text-indigo-800 mb-4">Federated Analytics Structure</h2>
+                <p class="text-gray-700 mb-6">
+                    Our federated analytics structure balances enterprise governance with department-level autonomy, creating a collaborative environment that leverages centralized resources while empowering domain-specific expertise. This model enables us to scale analytics capabilities across the organization while maintaining consistent standards and practices.
+                </p>
+                
+                <div class="quote-box bg-indigo-50 border-l-4 border-indigo-600 p-4 mb-6 italic">
+                    <p class="text-gray-700">"Imagine a hospital where every decision is powered by the right data at the right time—transforming patient care and operational excellence. That's our vision with this new data and analytics initiative."</p>
+                    <p class="text-sm mt-2 text-gray-600 font-normal">— Conrad Gleber, MD, MBA, Associate Chief Medical Informatics Officer for Data and Analytics</p>
+                </div>
+                
+                <div class="mb-8">
+                    <div class="box adac-council">
+                        Analytics & Data Advisory Council (ADAC)
+                        <p><small>Strategic oversight of URMC's data and analytics</small></p>
+                    </div>
+                    
+                    <div class="flex justify-center my-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </div>
+                    
+                    <div class="box cop">
+                        Community of Practice (CoP)
+                        <p><small>Fostering federated cooperation among analytics groups</small></p>
+                    </div>
+                    
+                    <div class="flex justify-center my-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </div>
+                    
+                    <div class="flex flex-col md:flex-row justify-center gap-6">
+                        <div class="md:w-1/2">
+                            <h3 class="text-xl font-bold text-center mb-4" style="color: #70ad47;">Operational Centers of Excellence</h3>
+                            <div class="box coe">
+                                Financial Operations (FinOps)<br>CoE
+                                <p><small>Financial data and analytics</small></p>
+                            </div>
+                            <div class="box coe">
+                                Quality Institute (QI)<br>CoE
+                                <p><small>Quality and safety analytics</small></p>
+                            </div>
+                            <div class="box coe">
+                                Information Systems<br>CoE
+                                <p><small>Technical infrastructure and data support</small></p>
+                            </div>
+                            <div class="box coe">
+                                Pharmacy<br>CoE
+                                <p><small>Medication usage and outcomes</small></p>
+                            </div>
+                            <div class="box coe">
+                                Supply Chain<br>CoE
+                                <p><small>Materials management and logistics</small></p>
+                            </div>
+                        </div>
+                        
+                        <div class="md:w-1/2 mt-6 md:mt-0">
+                            <h3 class="text-xl font-bold text-center mb-4" style="color: #ed7d31;">Clinical Analytics Hubs</h3>
+                            <div class="box cah">
+                                Oncology<br>Clinical Analytics Hub
+                                <p><small>Cancer care outcomes and research</small></p>
+                            </div>
+                            <div class="box cah">
+                                Neurosurgery<br>Clinical Analytics Hub
+                                <p><small>Neurosurgical outcomes and performance</small></p>
+                            </div>
+                            <div class="box cah">
+                                Cardiology<br>Clinical Analytics Hub
+                                <p><small>Cardiovascular care metrics</small></p>
+                            </div>
+                            <div class="box cah">
+                                Primary Care<br>Clinical Analytics Hub
+                                <p><small>Population health and preventive care</small></p>
+                            </div>
+                            <div class="box cah">
+                                More Clinical Specialties<br>(Future Expansion)
+                                <p><small>Domain-specific clinical insights</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-indigo-800 mb-6">Community of Practice (CoP) Structure</h2>
+            
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <p class="text-gray-700 mb-6">
+                    The Community of Practice (CoP) is chartered by ADAC to foster federated cooperation among analytics groups across the enterprise. It serves as the central hub for knowledge sharing, standards development, and collaborative innovation, connecting operational Centers of Excellence with specialized Clinical Analytics Hubs.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div class="border rounded-lg p-6">
+                        <h3 class="text-xl font-bold text-indigo-800 mb-4">Purpose & Responsibilities</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                <span>Foster federated cooperation among Centers of Excellence and Clinical Analytics Hubs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                <span>Act as an agent to de-silo data products across the organization</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                <span>Promote enterprise-level data & analytics products and shared definitions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                <span>Maintain Analytics Central as a centralized resource hub</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                <span>Create and maintain data analytics publishing standards and versioning practices</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                <span>Promote data literacy and self-service analytics across the organization</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="border rounded-lg p-6">
+                        <h3 class="text-xl font-bold text-indigo-800 mb-4">Membership & Structure</h3>
+                        <div class="mb-4">
+                            <h4 class="font-bold text-gray-800 mb-2">Leadership Team</h4>
+                            <ul class="space-y-1 text-gray-700 mb-4">
+                                <li>Conrad Gleber, MD, MBA — Facilitator & Moderator</li>
+                                <li>Primary contact from each CoE and Clinical Analytics Hub</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4 class="font-bold text-gray-800 mb-2">General Membership</h4>
+                            <ul class="space-y-1 text-gray-700 mb-4">
+                                <li>At least one operational lead from each CoE/CAH</li>
+                                <li>Additional team members from each CoE/CAH</li>
+                                <li>Ad hoc participation from all analytics professionals</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-2">Meeting Cadence</h4>
+                            <ul class="space-y-1 text-gray-700">
+                                <li>Leadership Team — Monthly strategic meetings</li>
+                                <li>General Membership — Quarterly community sessions</li>
+                                <li>Special Interest Groups — As needed for focused topics</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-indigo-800 mb-4">Key Deliverables</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="bg-indigo-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-indigo-800 mb-2">Data Resources Catalog</h4>
+                            <p class="text-sm text-gray-700">Consolidated catalog of data dictionaries, handbooks, and documentation resources</p>
+                            <p class="text-xs text-gray-500 mt-2 italic">Updated quarterly</p>
+                        </div>
+                        <div class="bg-indigo-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-indigo-800 mb-2">Data Standards & Guidelines</h4>
+                            <p class="text-sm text-gray-700">Common standards for development, publication, and maintenance of analytics assets</p>
+                            <p class="text-xs text-gray-500 mt-2 italic">Updated as needed</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                    <div class="flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <div>
+                            <p class="text-sm text-gray-700 mb-1">
+                                "By breaking down data silos and empowering our teams with shared tools and knowledge, we are paving the way for smarter, faster, and more personalized patient care."
+                            </p>
+                            <p class="text-xs text-gray-500 italic">— Kevin Moran, Senior Director, ISD Enterprise Data and Analytics</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-indigo-800 mb-6">Understanding Centers of Excellence & Clinical Analytics Hubs</h2>
+            
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <p class="text-gray-700 mb-6">
+                    Our federated analytics structure distinguishes between operational Centers of Excellence and specialty-focused Clinical Analytics Hubs, recognizing their unique purposes while enabling collaboration through our Community of Practice.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div class="comparison-detail coe-detail">
+                        <h3 class="text-xl font-bold text-green-800 mb-4">Centers of Excellence (CoEs)</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <span class="font-semibold mr-2">Primary focus:</span>
+                                <span>Enterprise-wide operational functions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-semibold mr-2">Scope:</span>
+                                <span>Service-oriented support for the entire organization</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-semibold mr-2">Data focus:</span>
+                                <span>Generalized operational metrics and KPIs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-semibold mr-2">Expertise:</span>
+                                <span>Broad domain knowledge applicable across departments</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-semibold mr-2">Examples:</span>
+                                <span>Finance, Quality Improvement, Information Systems</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-semibold mr-2">Responsibility:</span>
+                                <span>Creating and maintaining analytics products within their area of expertise for the entire enterprise</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="comparison-detail cah-detail">
+                        <h3 class="text-xl font-bold text-orange-800 mb-4">Clinical Analytics Hubs (CAHs)</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <span class="font-semibold mr-2">Primary focus:</span>
+                                <span>Specific clinical specialty or service line</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-semibold mr-2">Scope:</span>
+                                <span>Deep, specialized support for clinical decision-making</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-semibold mr-2">Data focus:</span>
+                                <span>Clinical outcomes, research insights, patient care metrics</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-semibold mr-2">Expertise:</span>
+                                <span>Specialized clinical knowledge with integrated analytics</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-semibold mr-2">Examples:</span>
+                                <span>Oncology, Neurosurgery, Cardiology</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-semibold mr-2">Responsibility:</span>
+                                <span>Translating analytics into clinical practice improvements and research advances specific to their domain</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full border-collapse">
+                        <thead>
+                            <tr class="bg-gray-100">
+                                <th class="border p-2 text-left">Attribute</th>
+                                <th class="border p-2 text-left">Centers of Excellence</th>
+                                <th class="border p-2 text-left">Clinical Analytics Hubs</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border p-2">Organizational focus</td>
+                                <td class="border p-2">Horizontal (across departments)</td>
+                                <td class="border p-2">Vertical (within specialty)</td>
+                            </tr>
+                            <tr>
+                                <td class="border p-2">Primary stakeholders</td>
+                                <td class="border p-2">Executive leadership, operations teams</td>
+                                <td class="border p-2">Clinical leaders, physicians, researchers</td>
+                            </tr>
+                            <tr>
+                                <td class="border p-2">Analytics application</td>
+                                <td class="border p-2">Operational efficiency, business processes</td>
+                                <td class="border p-2">Clinical outcomes, patient care quality, research</td>
+                            </tr>
+                            <tr>
+                                <td class="border p-2">Data sources</td>
+                                <td class="border p-2">Enterprise systems, financial platforms</td>
+                                <td class="border p-2">EHR clinical data, specialty registries, research databases</td>
+                            </tr>
+                            <tr>
+                                <td class="border p-2">Decision support</td>
+                                <td class="border p-2">Strategic and operational decisions</td>
+                                <td class="border p-2">Clinical practice and research decisions</td>
+                            </tr>
+                            <tr>
+                                <td class="border p-2">Governance relationship</td>
+                                <td class="border p-2">Direct reporting to ADAC</td>
+                                <td class="border p-2">Collaborating with ADAC through the Community of Practice</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-indigo-800 mb-6">Federated Development Model</h2>
+            
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <p class="text-gray-700 mb-6">
+                    Our federated development model balances centralized governance with distributed expertise, enabling scalable analytics capabilities while maintaining enterprise standards and security.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                    <div class="border rounded-lg p-4 bg-blue-50">
+                        <h4 class="font-bold text-blue-800 mb-2">Central IT Analytics Team</h4>
+                        <ul class="list-disc pl-4 text-sm space-y-1 text-gray-600">
+                            <li>Enterprise platform management</li>
+                            <li>Data integration architecture</li>
+                            <li>Security and compliance</li>
+                            <li>Standards and guidelines</li>
+                            <li>Governance facilitation</li>
+                            <li>Training and enablement</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="border rounded-lg p-4 bg-green-50">
+                        <h4 class="font-bold text-green-800 mb-2">Departmental Analytics Teams</h4>
+                        <ul class="list-disc pl-4 text-sm space-y-1 text-gray-600">
+                            <li>Department-specific development</li>
+                            <li>Subject matter expertise</li>
+                            <li>Local data stewardship</li>
+                            <li>End-user engagement</li>
+                            <li>Requirements definition</li>
+                            <li>Workflow integration</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="border rounded-lg p-4 bg-purple-50">
+                        <h4 class="font-bold text-purple-800 mb-2">Governance Structure</h4>
+                        <ul class="list-disc pl-4 text-sm space-y-1 text-gray-600">
+                            <li>Analytics Steering Committee</li>
+                            <li>Data Governance Council</li>
+                            <li>Community of Practice</li>
+                            <li>Request Review Board</li>
+                            <li>Standards Committee</li>
+                            <li>Project Portfolio Management</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="border rounded-lg overflow-hidden mb-8">
+                    <div class="bg-gray-100 p-4">
+                        <h3 class="font-bold text-gray-800 text-xl mb-2">Federated Development Benefits</h3>
+                    </div>
+                    <div class="p-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-2">Strategic Benefits</h4>
+                                <ul class="list-disc pl-4 text-sm space-y-1 text-gray-600">
+                                    <li>Domain expertise embedded in analytics</li>
+                                    <li>Deeper clinical and business context</li>
+                                    <li>Closer alignment with department goals</li>
+                                    <li>Reduced IT bottlenecks</li>
+                                    <li>More responsive to changing needs</li>
+                                    <li>Enhanced user adoption and engagement</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-2">Operational Benefits</h4>
+                                <ul class="list-disc pl-4 text-sm space-y-1 text-gray-600">
+                                    <li>Scalable development capacity</li>
+                                    <li>Consistent standards and methodologies</li>
+                                    <li>Shared best practices</li>
+                                    <li>Centralized oversight with distributed execution</li>
+                                    <li>Efficient resource allocation</li>
+                                    <li>Faster time-to-insight</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-indigo-800 mb-6">Getting Started with Analytics Collaboration</h2>
+            
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-xl font-bold text-indigo-800 mb-4">For Clinical Departments</h3>
+                        
+                        <h4 class="font-bold text-gray-800 mb-2">Immediate Actions</h4>
+                        <ol class="list-decimal pl-5 text-gray-700 space-y-2 mb-6">
+                            <li>Identify your department's current analytics capabilities and needs</li>
+                            <li>Review the Clinical Analytics Hub application template</li>
+                            <li>Designate potential leadership for your analytics team</li>
+                            <li>Document key use cases that would benefit from enhanced analytics</li>
+                            <li>Contact ADAC facilitators to express interest in joining the Community of Practice</li>
+                        </ol>
+                        
+                        <h4 class="font-bold text-gray-800 mb-2">Resources Available</h4>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                            <li>Clinical Analytics Hub application template</li>
+                            <li>Community of Practice Charter</li>
+                            <li>Consultation with existing CoE leaders</li>
+                            <li>Analytics Central portal resources</li>
+                            <li>ADAC advisory support</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-bold text-indigo-800 mb-4">For Operational Departments</h3>
+                        
+                        <h4 class="font-bold text-gray-800 mb-2">Immediate Actions</h4>
+                        <ol class="list-decimal pl-5 text-gray-700 space-y-2 mb-6">
+                            <li>Evaluate opportunities to establish or formalize a Center of Excellence</li>
+                            <li>Identify enterprise-wide data and analytics needs in your domain</li>
+                            <li>Review the CoE application and charter template</li>
+                            <li>Connect with existing CoE leaders to understand best practices</li>
+                            <li>Develop a strategic plan for your analytics initiatives</li>
+                        </ol>
+                        
+                        <h4 class="font-bold text-gray-800 mb-2">Resources Available</h4>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                            <li>Center of Excellence application template</li>
+                            <li>Enterprise analytics architecture documentation</li>
+                            <li>Data governance framework</li>
+                            <li>Development standards and templates</li>
+                            <li>Training resources for analytics technologies</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mt-8 p-4 bg-indigo-50 rounded-lg">
+                    <h3 class="text-xl font-bold text-indigo-800 mb-4">Next Steps for All Participants</h3>
+                    <ol class="list-decimal pl-5 text-gray-700 space-y-2">
+                        <li>Register for the next Community of Practice quarterly meeting</li>
+                        <li>Explore resources on the Analytics Central portal</li>
+                        <li>Identify potential contributions to the shared knowledge base</li>
+                        <li>Connect with peers in other departments to explore collaboration opportunities</li>
+                        <li>Participate in upcoming training and enablement sessions</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-6">
+            <div class="flex justify-between">
+                <a href="strategic-plan.html" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                    Strategic Plan
+                </a>
+                <a href="index.html" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+                    Back to Overview
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold">University of Rochester Medical Center</h3>
+                    <p class="text-sm">Enterprise Data & Analytics</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-sm">Contact: analytics@urmc.rochester.edu</p>
+                    <p class="text-sm">© 2025 University of Rochester Medical Center</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].className = tabcontent[i].className.replace(" active", "");
+            }
+            
+            tablinks = document.getElementsByClassName("tab");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            
+            document.getElementById(tabName).className += " active";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>2">Enterprise Product Report</h4>
+                            <p class="text-sm text-gray-700">Annual inventory of enterprise-level data and analytics products with utilization metrics</p>
+                            <p class="text-xs text-gray-500 mt-2 italic">Annual publication</p>
+                        </div>
+                        <div class="bg-indigo-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-indigo-800 mb-

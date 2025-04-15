@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URMC Strategic Implementation Plan</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .ur-blue {
+            background-color: #003B71;
+            color: white;
+        }
+        .ur-yellow {
+            background-color: #FFD100;
+            color: #003B71;
+        }
+        
+        .layer-box {
+            border-radius: 8px;
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .layer-box:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .layer-title {
+            font-weight: bold;
+            text-align: center;
+            padding: 12px;
+            font-size: 18px;
+        }
+        
+        .layer-components {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 0 10px 10px 10px;
+        }
+        
+        .component {
+            background-color: white;
+            border-radius: 6px;
+            padding: 8px;
+            margin: 5px;
+            text-align: center;
+            border: 1px solid;
+            min-width: 120px;
+            font-size: 14px;
+        }
+        
+        /* Layer-specific colors */
+        .governance-layer {
+            background-color: #dbeafe;
+        }
+        .governance-layer .component {
+            border-color: #3b82f6;
+            color: #1e40af;
+        }
+        
+        .presentation-layer {
+            background-color: #fef3c7;
+        }
+        .presentation-layer .component {
+            border-color: #f59e0b;
+            color: #92400e;
+        }
+        
+        .development-layer {
+            background-color: #d1fae5;
+        }
+        .development-layer .component {
+            border-color: #10b981;
+            color: #065f46;
+        }
+        
+        .integration-layer {
+            background-color: #fbcfe8;
+        }
+        .integration-layer .component {
+            border-color: #ec4899;
+            color: #9d174d;
+        }
+        
+        .foundation-layer {
+            background-color: #ede9fe;
+        }
+        .foundation-layer .component {
+            border-color: #8b5cf6;
+            color: #5b21b6;
+        }
+        
+        .sources-layer {
+            background-color: #dbeafe;
+        }
+        .sources-layer .component {
+            border-color: #3b82f6;
+            color: #1e40af;
+        }
+        
+        .connecting-line {
+            width: 2px;
+            height: 10px;
+            background-color: #94a3b8;
+            margin: 0 auto;
+            display: block;
+        }
+        
+        .phase-box {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .phase-box:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 4px;
+            background-color: #818cf8;
+        }
+        
+        .phase-circle {
+            position: absolute;
+            left: -8px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #4f46e5;
+            border: 3px solid white;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Header -->
+    <header class="ur-blue shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div>
+                    <h1 class="text-3xl font-bold">Strategic Implementation Plan</h1>
+                    <h2 class="text-xl mt-2">FY2025-2027 Analytics Roadmap</h2>
+                </div>
+                <div class="mt-4 md:mt-0">
+                    <p class="text-sm">University of Rochester Medical Center</p>
+                    <p class="text-sm">Enterprise Data & Analytics</p>
+                    <p class="text-sm">April 2025</p>
+                </div>
+            </div>
+            <div class="mt-4">
+                <nav class="flex space-x-4">
+                    <a href="index.html" class="text-white hover:text-yellow-300 font-medium">Overview</a>
+                    <a href="governance-structure.html" class="text-white hover:text-yellow-300 font-medium">Governance Structure</a>
+                    <a href="strategic-plan.html" class="text-yellow-300 hover:text-yellow-300 font-medium underline">Strategic Plan</a>
+                    <a href="community-structure.html" class="text-white hover:text-yellow-300 font-medium">Community Structure</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-12">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-bold text-indigo-800 mb-4">Executive Summary</h2>
+                <p class="text-gray-700 mb-6">
+                    The University of Rochester Medical Center Data & Analytics Master Plan establishes a comprehensive framework for building an enterprise analytics ecosystem that enables data-driven decision making across clinical, operational, and research domains. This three-year strategic roadmap focuses on leveraging best-in-class technologies to create a federated analytics development model while maintaining enterprise governance and standards.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                    <div class="bg-indigo-50 p-4 rounded-lg">
+                        <h3 class="font-bold text-indigo-800 mb-2">Total Current Investment</h3>
+                        <p class="text-3xl font-bold text-green-700">$7,380K</p>
+                        <p class="text-sm text-gray-600 mt-2">Current allocated budget across all initiatives</p>
+                    </div>
+                    <div class="bg-indigo-50 p-4 rounded-lg">
+                        <h3 class="font-bold text-indigo-800 mb-2">Total Future Investment</h3>
+                        <p class="text-3xl font-bold text-blue-700">$5,080K</p>
+                        <p class="text-sm text-gray-600 mt-2">Planned investment for FY2026-2027</p>
+                    </div>
+                    <div class="bg-indigo-50 p-4 rounded-lg">
+                        <h3 class="font-bold text-indigo-800 mb-2">Expected Annual ROI</h3>
+                        <p class="text-3xl font-bold text-purple-700">209%</p>
+                        <p class="text-sm text-gray-600 mt-2">Estimated return on investment in operational efficiency</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-indigo-800 mb-6">Enterprise Analytics Architecture</h2>
+            
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <p class="text-gray-700 mb-6">
+                    Our enterprise analytics architecture establishes a comprehensive framework that integrates data sources, technology components, and delivery platforms to create a cohesive ecosystem for data-driven decision making. This architecture balances centralized governance with federated development capabilities.
+                </p>
+                
+                <div class="border p-6 rounded-lg bg-gray-50 mb-8">
+                    <!-- Governance & Management Layer -->
+                    <div class="layer-box governance-layer mb-4">
+                        <div class="layer-title">Governance &amp; Management Layer</div>
+                        <div class="layer-components">
+                            <div class="component">Data Governance</div>
+                            <div class="component">Centralized Requests</div>
+                            <div class="component">Analytics Dev Standards</div>
+                            <div class="component">Security &amp; Compliance</div>
+                        </div>
+                    </div>
+                    
+                    <div class="connecting-line"></div>
+                    
+                    <!-- Presentation & Distribution Layer -->
+                    <div class="layer-box presentation-layer mb-4">
+                        <div class="layer-title">Presentation &amp; Distribution Layer</div>
+                        <div class="layer-components">
+                            <div class="component">Analytics Central</div>
+                            <div class="component">DecisionPoint Portal</div>
+                            <div class="component">Tableau Server</div>
+                            <div class="component">Slicer-Dicer</div>
+                        </div>
+                    </div>
+                    
+                    <div class="connecting-line"></div>
+                    
+                    <!-- Analytics Development Layer -->
+                    <div class="layer-box development-layer mb-4">
+                        <div class="layer-title">Analytics Development Layer</div>
+                        <div class="layer-components">
+                            <div class="component">Tableau Development Environment</div>
+                            <div class="component">Denodo Data Sandboxes</div>
+                            <div class="component">Analytics Lifecycle Management</div>
+                        </div>
+                    </div>
+                    
+                    <div class="connecting-line"></div>
+                    
+                    <!-- Data Integration Layer -->
+                    <div class="layer-box integration-layer mb-4">
+                        <div class="layer-title">Data Integration Layer</div>
+                        <div class="layer-components">
+                            <div class="component">Informatica ETL / Governance</div>
+                            <div class="component">Denodo Data Virtualization</div>
+                            <div class="component">REST APIs / Integration Services</div>
+                        </div>
+                    </div>
+                    
+                    <div class="connecting-line"></div>
+                    
+                    <!-- Foundation Warehouses -->
+                    <div class="layer-box foundation-layer mb-4">
+                        <div class="layer-title">Foundation Warehouses</div>
+                        <div class="layer-components">
+                            <div class="component">Epic Caboodle</div>
+                            <div class="component">Research OMOP</div>
+                            <div class="component">Finance Strata</div>
+                            <div class="component">UR Workday</div>
+                        </div>
+                    </div>
+                    
+                    <div class="connecting-line"></div>
+                    
+                    <!-- Data Sources -->
+                    <div class="layer-box sources-layer">
+                        <div class="layer-title">Data Sources</div>
+                        <div class="layer-components">
+                            <div class="component">Epic Clarity</div>
+                            <div class="component">Allscripts</div>
+                            <div class="component">Workday</div>
+                            <div class="component">SG/Vizient</div>
+                            <div class="component">Press Ganey</div>
+                            <div class="component">PROMIS</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="border rounded-lg p-4">
+                        <h4 class="font-bold text-indigo-800 mb-2">Key Technologies</h4>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                <div>
+                                    <span class="font-semibold">Informatica:</span> Enterprise data integration, quality, and governance platform
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                <div>
+                                    <span class="font-semibold">Denodo:</span> Data virtualization layer for federated queries and access
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                <div>
+                                    <span class="font-semibold">Tableau:</span> Enterprise visualization and analytics development platform
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="border rounded-lg p-4">
+                        <h4 class="font-bold text-indigo-800 mb-2">Strategic Benefits</h4>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                <div>
+                                    <span class="font-semibold">Federated Model:</span> Balances centralized governance with domain-specific expertise
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                <div>
+                                    <span class="font-semibold">Integration:</span> Unified view of data across clinical, financial, and operational systems
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                <div>
+                                    <span class="font-semibold">Self-Service:</span> Enables analytics capabilities across skill levels and departments
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="border rounded-lg p-4">
+                        <h4 class="font-bold text-indigo-800 mb-2">Implementation Focus</h4>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                <div>
+                                    <span class="font-semibold">Data Foundation:</span> Establishing reliable, governed data sources
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                <div>
+                                    <span class="font-semibold">Developer Community:</span> Building federated development capabilities
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                <div>
+                                    <span class="font-semibold">Workflow Integration:</span> Embedding analytics in operational processes
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-indigo-800 mb-6">Implementation Roadmap</h2>
+            
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <p class="text-gray-700 mb-6">
+                    Our three-year implementation roadmap outlines a phased approach to building our enterprise analytics capabilities, starting with fundamental infrastructure and governance, then expanding to enable federated development, and finally scaling to enterprise-wide adoption and innovation.
+                </p>
+                
+                <div class="relative border-l-4 border-indigo-300 ml-6 pl-6 mb-8">
+                    <!-- Phase 1 -->
+                    <div class="phase-box">
+                        <div class="phase-circle"></div>
+                        <div class="bg-indigo-50 rounded-lg p-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold text-indigo-800">Phase 1: Foundation (Q2-Q3 2025)</h3>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded-full">Current Phase</span>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-2">Key Initiatives</h4>
+                                    <ul class="list-disc pl-4 text-sm space-y-1 text-gray-600">
+                                        <li>Epic Caboodle optimization and performance tuning</li>
+                                        <li>Denodo platform implementation and data source connections</li>
+                                        <li>Initial Tableau development standards and templates</li>
+                                        <li>ServiceNow analytics request process implementation</li>
+                                        <li>Data governance framework establishment</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-2">Key Outcomes</h4>
+                                    <ul class="list-disc pl-4 text-sm space-y-1 text-gray-600">
+                                        <li>Improved Caboodle refresh times and model optimization</li>
+                                        <li>Core virtualized data layer for clinical analytics</li>
+                                        <li>Standardized development environment for Tableau</li>
+                                        <li>Centralized request intake and tracking process</li>
+                                        <li>Initial data governance structure and roles</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <div class="flex justify-between text-xs mb-1">
+                                    <span class="text-gray-600">Phase Progress</span>
+                                    <span class="font-semibold">65%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-blue-600 h-2 rounded-full" style="width: 65%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Phase 2 -->
+                    <div class="phase-box">
+                        <div class="phase-circle"></div>
+                        <div class="bg-indigo-50 rounded-lg p-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold text-indigo-800">Phase 2: Enablement (Q4 2025 - Q1 2026)</h3>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded-full">Future Phase</span>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-2">Key Initiatives</h4>
+                                    <ul class="list-disc pl-4 text-sm space-y-1 text-gray-600">
+                                        <li>Metric Insights implementation and portal design</li>
+                                        <li>Federated developer community establishment</li>
+                                        <li>Department-level Tableau developer training program</li>
+                                        <li>Slicer Dicer adoption and template library</li>
+                                        <li>Initial clinical intranet analytics integration</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-2">Key Outcomes</h4>
+                                    <ul class="list-disc pl-4 text-sm space-y-1 text-gray-600">
+                                        <li>Enterprise metrics portal with initial dashboards</li>
+                                        <li>First cohort of trained federated developers</li>
+                                        <li>Analytics development community of practice</li>
+                                        <li>Clinical self-service analytics adoption increase</li>
+                                        <li>Workflow-embedded analytics prototypes</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <div class="flex justify-between text-xs mb-1">
+                                    <span class="text-gray-600">Phase Progress</span>
+                                    <span class="font-semibold">10%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-blue-600 h-2 rounded-full" style="width: 10%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Phase 3 -->
+                    <div class="phase-box">
+                        <div class="phase-circle"></div>
+                        <div class="bg-indigo-50 rounded-lg p-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold text-indigo-800">Phase 3: Scale (Q2-Q4 2026)</h3>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded-full">Future Phase</span>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-2">Key Initiatives</h4>
+                                    <ul class="list-disc pl-4 text-sm space-y-1 text-gray-600">
+                                        <li>Enterprise-wide Metric Insights rollout</li>
+                                        <li>Advanced data integration patterns with Informatica</li>
+                                        <li>Expanded federated development community</li>
+                                        <li>Clinical intranet analytics expansion</li>
+                                        <li>Advanced Epic Caboodle data modeling</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-2">Key Outcomes</h4>
+                                    <ul class="list-disc pl-4 text-sm space-y-1 text-gray-600">
+                                        <li>High engagement with centralized analytics portal</li>
+                                        <li>Complex data integration capabilities across systems</li>
+                                        <li>Decentralized analytics development at scale</li>
+                                        <li>Analytics embedded in critical clinical workflows</li>
+                                        <li>Enhanced data modeling for specialized use cases</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <div class="flex justify-between text-xs mb-1">
+                                    <span class="text-gray-600">Phase Progress</span>
+                                    <span class="font-semibold">0%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-blue-600 h-2 rounded-full" style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Phase 4 -->
+                    <div class="phase-box">
+                        <div class="phase-circle"></div>
+                        <div class="bg-indigo-50 rounded-lg p-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold text-indigo-800">Phase 4: Innovation (2027+)</h3>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded-full">Future Phase</span>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-2">Key Initiatives</h4>
+                                    <ul class="list-disc pl-4 text-sm space-y-1 text-gray-600">
+                                        <li>Advanced analytics and predictive modeling</li>
+                                        <li>AI/ML healthcare use cases development</li>
+                                        <li>Closed-loop analytics with automated workflows</li>
+                                        <li>Enhanced personalization and adaptive insights</li>
+                                        <li>Enterprise-wide data literacy program</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-2">Key Outcomes</h4>
+                                    <ul class="list-disc pl-4 text-sm space-y-1 text-gray-600">
+                                        <li>Predictive analytics embedded in clinical workflows</li>
+                                        <li>AI-driven clinical decision support models</li>
+                                        <li>Automated interventions based on analytics</li>
+                                        <li>Personalized analytics delivery by role/need</li>
+                                        <li>Data-driven culture across the organization</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <div class="flex justify-between text-xs mb-1">
+                                    <span class="text-gray-600">Phase Progress</span>
+                                    <span class="font-semibold">0%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-blue-600 h-2 rounded-full" style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-indigo-800 mb-6">Strategic Alignment</h2>
+            
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <p class="text-gray-700 mb-6">
+                    Our analytics initiatives directly support key URMC strategic priorities, delivering targeted capabilities and insights that drive operational improvement and clinical excellence.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Access to Care Strategic Area -->
+                    <div class="border rounded-lg overflow-hidden">
+                        <div class="bg-indigo-50 p-3 border-b">
+                            <h3 class="font-bold text-indigo-800 block w-full text-left">Improve Access to Care</h3>
+                        </div>
+                        <div class="p-4">
+                            <div class="mb-4">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h4 class="font-bold text-lg text-gray-800">Referral Analytics Framework</h4>
+                                </div>
+                                <p class="text-gray-600 text-sm mb-2">Epic Caboodle-based referral tracking solution with Tableau dashboards</p>
+                                <div class="text-xs text-gray-500">
+                                    <p><span class="font-semibold">Data Sources:</span> Caboodle, Clarity</p>
+                                    <p><span class="font-semibold">Tools:</span> Tableau, Denodo, Metric Insights</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-2">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h4 class="font-bold text-lg text-gray-800">Provider Capacity Analytics</h4>
+                                </div>
+                                <p class="text-gray-600 text-sm mb-2">Provider utilization analytics using Slicer Dicer templates</p>
+                                <div class="text-xs text-gray-500">
+                                    <p><span class="font-semibold">Data Sources:</span> Caboodle, Scheduling System</p>
+                                    <p><span class="font-semibold">Tools:</span> Slicer Dicer, Tableau, Metric Insights</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Hospital Throughput Strategic Area -->
+                    <div class="border rounded-lg overflow-hidden">
+                        <div class="bg-indigo-50 p-3 border-b">
+                            <h3 class="font-bold text-indigo-800 block w-full text-left">Improve Throughput in Hospitals</h3>
+                        </div>
+                        <div class="p-4">
+                            <div class="mb-4">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h4 class="font-bold text-lg text-gray-800">Discharge Planning Analytics</h4>
+                                </div>
+                                <p class="text-gray-600 text-sm mb-2">Discharge prediction model with real-time monitoring</p>
+                                <div class="text-xs text-gray-500">
+                                    <p><span class="font-semibold">Data Sources:</span> Caboodle, ADT Feeds</p>
+                                    <p><span class="font-semibold">Tools:</span> Informatica, Tableau, Metric Insights</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-2">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h4 class="font-bold text-lg text-gray-800">Bed Management Analytics</h4>
+                                </div>
+                                <p class="text-gray-600 text-sm mb-2">Real-time bed occupancy and throughput analytics</p>
+                                <div class="text-xs text-gray-500">
+                                    <p><span class="font-semibold">Data Sources:</span> Caboodle, Bed Management System</p>
+                                    <p><span class="font-semibold">Tools:</span> Denodo, Tableau, Metric Insights</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Clinical Communication Strategic Area -->
+                    <div class="border rounded-lg overflow-hidden">
+                        <div class="bg-indigo-50 p-3 border-b">
+                            <h3 class="font-bold text-indigo-800 block w-full text-left">Enhance Clinical Communication</h3>
+                        </div>
+                        <div class="p-4">
+                            <div class="mb-4">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h4 class="font-bold text-lg text-gray-800">Clinical Communication Analytics</h4>
+                                </div>
+                                <p class="text-gray-600 text-sm mb-2">Message response time and critical alert analytics</p>
+                                <div class="text-xs text-gray-500">
+                                    <p><span class="font-semibold">Data Sources:</span> Secure Messaging Platform, Epic</p>
+                                    <p><span class="font-semibold">Tools:</span> Denodo, Tableau, Metric Insights</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-2">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h4 class="font-bold text-lg text-gray-800">Mobile Documentation Metrics</h4>
+                                </div>
+                                <p class="text-gray-600 text-sm mb-2">Point-of-care documentation compliance and efficiency metrics</p>
+                                <div class="text-xs text-gray-500">
+                                    <p><span class="font-semibold">Data Sources:</span> Caboodle, Epic Activity Logs</p>
+                                    <p><span class="font-semibold">Tools:</span> Slicer Dicer, Tableau, Metric Insights</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Supply Chain Strategic Area -->
+                    <div class="border rounded-lg overflow-hidden">
+                        <div class="bg-indigo-50 p-3 border-b">
+                            <h3 class="font-bold text-indigo-800 block w-full text-left">Optimize Supply Chain Management</h3>
+                        </div>
+                        <div class="p-4">
+                            <div class="mb-4">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h4 class="font-bold text-lg text-gray-800">Inventory Analytics Suite</h4>
+                                </div>
+                                <p class="text-gray-600 text-sm mb-2">End-to-end inventory management analytics</p>
+                                <div class="text-xs text-gray-500">
+                                    <p><span class="font-semibold">Data Sources:</span> Allscripts, RFID System</p>
+                                    <p><span class="font-semibold">Tools:</span> Informatica, Denodo, Tableau</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-2">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h4 class="font-bold text-lg text-gray-800">Supply Chain Financial Analytics</h4>
+                                </div>
+                                <p class="text-gray-600 text-sm mb-2">Cost per case and supply utilization metrics</p>
+                                <div class="text-xs text-gray-500">
+                                    <p><span class="font-semibold">Data Sources:</span> Caboodle, Allscripts, Stratajazz</p>
+                                    <p><span class="font-semibold">Tools:</span> Denodo, Tableau, Metric Insights</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-6">
+            <div class="flex justify-between">
+                <a href="governance-structure.html" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                    Governance Structure
+                </a>
+                <a href="community-structure.html" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+                    Community Structure
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold">University of Rochester Medical Center</h3>
+                    <p class="text-sm">Enterprise Data & Analytics</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-sm">Contact: analytics@urmc.rochester.edu</p>
+                    <p class="text-sm">© 2025 University of Rochester Medical Center</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
